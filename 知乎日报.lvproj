@@ -15,6 +15,7 @@
 		<Item Name="getTitleImage.vi" Type="VI" URL="../getTitleImage.vi"/>
 		<Item Name="story对象.vi" Type="VI" URL="../story对象.vi"/>
 		<Item Name="test.vi" Type="VI" URL="../test.vi"/>
+		<Item Name="当前路径.vi" Type="VI" URL="../当前路径.vi"/>
 		<Item Name="获取具体消息.vi" Type="VI" URL="../获取具体消息.vi"/>
 		<Item Name="具体消息显示.vi" Type="VI" URL="../具体消息显示.vi"/>
 		<Item Name="列表消息json处理.vi" Type="VI" URL="../列表消息json处理.vi"/>
