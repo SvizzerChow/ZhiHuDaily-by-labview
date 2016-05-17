@@ -19,6 +19,7 @@
 		<Item Name="获取具体消息.vi" Type="VI" URL="../获取具体消息.vi"/>
 		<Item Name="具体消息显示.vi" Type="VI" URL="../具体消息显示.vi"/>
 		<Item Name="列表消息json处理.vi" Type="VI" URL="../列表消息json处理.vi"/>
+		<Item Name="请求刷新.vi" Type="VI" URL="../请求刷新.vi"/>
 		<Item Name="主面板.vi" Type="VI" URL="../主面板.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
