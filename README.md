@@ -3,14 +3,16 @@
 
 
 ## What is
-* It's a Labview project.
+* It's my Labview course work.
 * It's a client for [ZhiHuDaily][1] ,use by [ZhiHuDaily API][2]
 * It can watch ZhiHuDaily in computer.
 
+## Version
+* v0.1.0
 
 
 ## Change Log
-see it [change log][3]
+* see it [change log][3]
 
 
   [1]: http://daily.zhihu.com/
