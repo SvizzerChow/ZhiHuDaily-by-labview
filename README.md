@@ -10,16 +10,14 @@
 * It can watch ZhiHuDaily in computer.
 
 ## Preview
-* start
-![image](http://github.com/Svizzera/ZhiHuDaily-by-labview/raw/master/image/08-56-40.jpg "start")
-* news
-![image](http://github.com/Svizzera/ZhiHuDaily-by-labview/raw/master/image/08-57-21.jpg "news")
+* start image
+![image](http://github.com/Svizzera/ZhiHuDaily-by-labview/raw/master/image/start.jpg "start")
+* news image
+![image](http://github.com/Svizzera/ZhiHuDaily-by-labview/raw/master/image/news.jpg "news")
 
 ## Version
-* v1.2.0
-* Add the title into the news of title image
-* Add the image source the news of title image
-
+* v1.2.5
+* Repair the progress bar cannot be automatically cancelled when the network is interrupted.
 
 ## Change Log
 * see it [change log][3]

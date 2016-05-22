@@ -10,6 +10,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="data" Type="Folder" URL="../data">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="getImage.vi" Type="VI" URL="../getImage.vi"/>
 		<Item Name="getJson.vi" Type="VI" URL="../getJson.vi"/>
 		<Item Name="getTitleImage.vi" Type="VI" URL="../getTitleImage.vi"/>
@@ -20,7 +23,7 @@
 		<Item Name="具体消息显示.vi" Type="VI" URL="../具体消息显示.vi"/>
 		<Item Name="列表消息json处理.vi" Type="VI" URL="../列表消息json处理.vi"/>
 		<Item Name="请求刷新.vi" Type="VI" URL="../请求刷新.vi"/>
-		<Item Name="主面板.vi" Type="VI" URL="../主面板.vi"/>
+		<Item Name="知乎日报.vi" Type="VI" URL="../知乎日报.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -154,6 +157,130 @@
 			<Item Name="PB_NI-Themed_WireFlow.vi" Type="VI" URL="/C/MyApplication/Auto/Labview/LabVIEW 2012/examples/WireFlow/WF ProgressBar/Progress bar panels/PB_NI-Themed_WireFlow.vi"/>
 			<Item Name="UTF-8toGBK.vi" Type="VI" URL="../UTF-8toGBK.vi"/>
 		</Item>
-		<Item Name="程序生成规范" Type="Build"/>
+		<Item Name="程序生成规范" Type="Build">
+			<Item Name="我的安装程序" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">知乎日报</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{C7DC6849-4A6D-4050-9A35-89F219DCBC90}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{3854EDA2-20A9-4A25-9A29-47A8BBF48DEB}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW运行引擎2012</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{20385C41-50B1-4416-AC2A-F7D6423A9BD6}</Property>
+				<Property Name="DistPartCount" Type="Int">1</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/知乎日报/我的安装程序</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">我的安装程序</Property>
+				<Property Name="INST_defaultDir" Type="Str">{C7DC6849-4A6D-4050-9A35-89F219DCBC90}</Property>
+				<Property Name="INST_language" Type="Int">2052</Property>
+				<Property Name="INST_productName" Type="Str">知乎日报</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">12008024</Property>
+				<Property Name="MSI_distID" Type="Str">{FABFD237-6E2B-4355-93FE-F30FE04BC731}</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{50DC3FD3-1F43-47C4-8817-D10F2DB150CD}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{C7DC6849-4A6D-4050-9A35-89F219DCBC90}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{C7DC6849-4A6D-4050-9A35-89F219DCBC90}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">知乎日报.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">知乎日报</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">知乎日报</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{04AB4C69-0E60-48C6-BB3F-9AB43E8579DD}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">知乎日报</Property>
+				<Property Name="Source[0].tag" Type="Ref">/我的电脑/程序生成规范/知乎日报</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
+			</Item>
+			<Item Name="知乎日报" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{8EC004C4-7F5F-4D81-8528-65FC1487B52A}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{C3973CBA-D8A5-4038-B0F6-668AC9F8405D}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{44CDA3ED-97F1-4C59-BD9E-34B21EE115C7}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">知乎日报</Property>
+				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/知乎日报</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{68BDF9B1-8C54-447D-9A79-79D7FCB2CAD8}</Property>
+				<Property Name="Destination[0].destName" Type="Str">知乎日报.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/知乎日报/知乎日报.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/知乎日报/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FEFE544C-B1C8-4233-A351-1A46F669B730}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/知乎日报.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/我的电脑/具体消息显示.vi</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[10].type" Type="Str">VI</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/我的电脑/列表消息json处理.vi</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].type" Type="Str">VI</Property>
+				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/我的电脑/请求刷新.vi</Property>
+				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[12].type" Type="Str">VI</Property>
+				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/data</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/getImage.vi</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/我的电脑/getJson.vi</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/我的电脑/getTitleImage.vi</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/我的电脑/story对象.vi</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/我的电脑/当前路径.vi</Property>
+				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[7].type" Type="Str">VI</Property>
+				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/我的电脑/获取具体消息.vi</Property>
+				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[8].type" Type="Str">VI</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/我的电脑/进度条.vi</Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[9].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">13</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">知乎日报</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">知乎日报</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">版权 2016 </Property>
+				<Property Name="TgtF_productName" Type="Str">知乎日报</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{04AB4C69-0E60-48C6-BB3F-9AB43E8579DD}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">知乎日报.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
