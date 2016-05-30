@@ -17,7 +17,7 @@
 
 ## Version
 * v1.2.8
-* Repair start view error when sending http request firstly.
+* Repair the progress bar cannot be automatically cancelled when the network is interrupted.
 
 ## Change Log
 * see it [change log][3]
