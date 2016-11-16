@@ -1,0 +1,15 @@
+1、外加模块
+
+JSON解析模块：JSON API（https://lavag.org/files/file/216-json-labview/）
+进度条模块：WF ProgressBar（安装JSON API时要求安装VI Package Manager，在VI Package Manager中搜索）
+
+2、使用注意
+由于不同安装路径的原因可能会出现缺少子VI,通常是外加模块安装位置的原因，需要手动指定文件位置。
+
+例如：缺少PB_NI-Themed_WireFlow.vi 解决方案：手动指定安装盘符\National Instruments\LabVIEW 2012\examples\WireFlow\WF ProgressBar\Progress bar panels\PB_NI-Themed_WireFlow.vi
+
+3、测试运行环境
+LABVIEW 2012 32位
+JSON API 1.3.1.26
+WF ProgressBar 1.0.1.46
+
